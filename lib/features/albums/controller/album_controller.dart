@@ -100,7 +100,7 @@ class AlbumController extends GetxController {
       final response = await _albumRepository.createAlbum(
           userId: userId, name: createAlbumNameController.text, id: id);
       if (response.statusCode == 201) {
-        _albumsList.add(AlbumListModel(
+        _albumsList.insert(0,AlbumListModel(
             userId: userId, id: id, title: createAlbumNameController.text));
         isLoading(false);
         Get.snackbar("Success", "Album Create successfully",
