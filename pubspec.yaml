@@ -1,0 +1,25 @@
+name: myapp
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.2 <4.0.0'
+
+dependencies:
+  dropdown_button2: ^2.3.9
+  file_picker: ^8.0.3
+  get: ^4.6.6
+  intl: ^0.19.0
+  flutter:
+    sdk: flutter
+  cached_network_image: ^3.3.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
